@@ -36,7 +36,7 @@ public class Recipe {
     private Set<Ingredient> ingredients;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Notes notes;
+    private Note note;
 
     @ManyToMany
     @JoinTable(
@@ -46,9 +46,9 @@ public class Recipe {
     )
     private Set<Category> categories;
 
-    public void setNotes(Notes notes) {
-        this.notes = notes;
-        notes.setRecipe(this);
+    public void setNote(Note note) {
+        this.note = note;
+        note.setRecipe(this);
     }
 
     public Recipe addIngredient(Ingredient ingredient) {
