@@ -14,6 +14,6 @@ public class IngredientDTO {
     private Long id;
     private String description;
     private BigDecimal amount;
-    private UniteOfMeasureDTO uniteOfMeasure;
+    private UnitOfMeasureDTO uniteOfMeasure;
     private RecipeDTO recipe;
 }

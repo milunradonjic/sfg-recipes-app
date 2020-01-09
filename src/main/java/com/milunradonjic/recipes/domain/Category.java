@@ -5,8 +5,11 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.Set;
 
-@Data
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Category {
 
     @Id

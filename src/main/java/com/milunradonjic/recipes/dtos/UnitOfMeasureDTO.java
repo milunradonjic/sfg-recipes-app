@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class UniteOfMeasureDTO {
+public class UnitOfMeasureDTO {
 
     private Long id;
     private String description;
